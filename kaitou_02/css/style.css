@@ -69,3 +69,34 @@ header nav a {
   text-align: center;
   padding: 26px 0;
 }
+
+.mainVisual img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+div.feature {
+  margin: 40px auto;
+}
+
+.feature ul {
+  overflow: hidden;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.feature li {
+  width: 300px;
+  margin: 0 10px;
+  float: left;
+}
+
+.feature img {
+  height: 140px;
+  width: 300px;
+}
+
+section#menu {
+  width: 680px;
+  margin: 0 auto;
+}
