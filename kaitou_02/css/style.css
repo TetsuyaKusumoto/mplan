@@ -1,6 +1,15 @@
+/*　全体で設定するもの
+フォントサイズ
+フォント
+ページ幅
+テキスト配置
+ページ背景
+ */
+
 html {
   font-size: 100%;
   font-family: sans-serif;
+  background-color: #ffa;
 }
 
 body {
@@ -9,11 +18,16 @@ body {
   background-color: #fff;
 }
 
+/*
+h1, h2にはサイズやマージン、ボーダーなど
+*/
 h1 {
   margin: 20px 0;
   font-size: 1.25rem;
 }
-
+/*
+リンクにはテキストやカラー
+*/
 h1 a {
   text-decoration: none;
   color: #000;
@@ -45,6 +59,9 @@ header nav {
   border-bottom-width: 2px;
 }
 
+/*
+floatで横にすることを想定して、widthを広く
+*/
 header nav ul {
   color: #FFF;
   width: 900px;
@@ -52,6 +69,9 @@ header nav ul {
   overflow: hidden;
 }
 
+/*
+widthを3等分
+*/
 header nav li {
   width: 300px;
   font-size: 1rem;
@@ -61,6 +81,7 @@ header nav li {
 header nav li:hover {
   background-color: #535755;
 }
+
 
 header nav a {
   text-decoration: none;
@@ -99,4 +120,65 @@ div.feature {
 section#menu {
   width: 680px;
   margin: 0 auto;
+}
+
+/* hidden は floatの親要素に */
+section#menu li {
+  text-align: left;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/*
+float leftの後の要素はボックスの右に回り込む
+*/
+section#menu li div {
+  width: 240px;
+  margin-bottom: 0 20px;
+  float: left;
+}
+
+section#menu img {
+  height: 140px;
+  width: 240px;
+}
+
+section#news {
+  width: 680px;
+  margin: 0 auto;
+}
+
+section#news li {
+  text-align: left;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+section#news img {
+  height: 140px;
+  width: 140px;
+}
+
+section#news li div {
+  width: 140px;
+  margin: 0 20px;
+  float: left;
+}
+
+section#inquire {
+  width: 680px;
+  margin: 0 auto;
+}
+
+section#inquire a {
+  color: #2e373d;
+}
+
+/* footerの上のスペースを決める */
+footer {
+  background: #aaa;
+  text-align: center;
+  padding: 1rem;
+  min-height: 60px;
+  margin-top: 100px;
 }
