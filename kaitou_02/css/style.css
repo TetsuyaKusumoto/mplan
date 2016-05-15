@@ -9,7 +9,6 @@
 html {
   font-size: 100%;
   font-family: sans-serif;
-  background-color: #ffa;
 }
 
 body {
@@ -70,7 +69,7 @@ header nav ul {
 }
 
 /*
-widthを3等分
+widthを3等分, 画像以外にfloatする場合はwidthが必要
 */
 header nav li {
   width: 300px;
@@ -82,7 +81,10 @@ header nav li:hover {
   background-color: #535755;
 }
 
-
+/*
+a要素はインラインブロック、paddingとかクリックの幅広げるために
+display: block
+*/
 header nav a {
   text-decoration: none;
   color: #FFF;
@@ -134,7 +136,7 @@ float leftの後の要素はボックスの右に回り込む
 */
 section#menu li div {
   width: 240px;
-  margin-bottom: 0 20px;
+  margin: 0 20px;
   float: left;
 }
 

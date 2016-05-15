@@ -1,0 +1,105 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>2column</title>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <style>
+    div {
+      color: #fff;
+      width: 1024px;
+      margin: 0 auto;
+      background-color: rgb(199, 25, 210);
+    }
+    header {
+      background-color: rgb(120, 164, 242);
+      paddin: 10px;
+    }
+    nav {
+      background-color: rgb(85, 173, 47);
+    }
+    article {
+      padding: 10px;
+      width: 580px;
+      background-color: rgb(62, 244, 24);
+      float: left;
+    }
+    aside {
+      padding: 10px;
+      width: 404px;
+      background-color: rgb(237, 147, 127);
+      float: left;
+    }
+    footer {
+      /* */
+      clear: left;
+      background-color: rgb(204, 23, 84);
+      text-align: center;
+    }
+    /* グローバルナビ */
+    nav {
+      width: 1024px;
+      margin: 0 auto;
+      background-color: rgb(43, 195, 131)
+    }
+    nav ul {
+      overflow: hidden;
+      width: 0 auto;
+    }
+    nav li {
+      background-color: #fff;
+      width: 200px;
+      float: left;
+      margin-right: 2px;
+    }
+    nav li:last-child {
+      margin-right: 0;
+    }
+    nav a {
+      display: block;
+      background-color: #FCF3F8;
+      text-align: center;
+      text-decoration: none;
+      /* 真ん中に持ってくる */
+      height: 40px;
+      line-height: 40px;
+      transition-duration: 1s;
+      transition-property: all;
+    }
+    nav a:hover {
+      background-color: rgb(222, 84, 26);
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+<div>
+<header>
+  <h1>大見出し</h1>
+  <p>サブ</p>
+</header>
+<nav>
+  <ul>
+    <li><a href="">top</a></li>
+    <li><a href="">1st</a></li>
+    <li><a href="">2nd</a></li>
+    <li><a href="">3rd</a></li>
+    <li><a href="">4th</a></li>
+  </ul>
+</nav>
+<article>
+  <h2>本分のタイトル</h2>
+  <p>ああああああああああああああああああああああああああああああああああああああああああああ</p>
+</article>
+<aside>
+  <ul>
+    <li><a href="">top</a></li>
+    <li><a href="">1st</a></li>
+    <li><a href="">2nd</a></li>
+    <li><a href="">3rd</a></li>
+    <li><a href="">4th</a></li>
+  </ul>
+</aside>
+<footer>name</footer>
+</div>
+</body>
+</html>

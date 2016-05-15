@@ -1,0 +1,83 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>グローバルナビ</title>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <style>
+  html {
+    background-color: #c8651c;
+  }
+  header {
+    position: fixed;
+
+    top: 0;
+    left: 0.5rem;
+    height: 3rem;
+    width: 80%;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: #fec3a1;
+  }
+  nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    background-color: #a34d65;
+    overflow: hidden; /* はみ出たものを非表示にする */
+    cursor: pointer;
+    /* transitionは元のほうに書く*/
+    transition-duration: 0.5s;
+    transition-property: all;
+  }
+  nav:hover {
+    height: 22rem; /*hoverしたら表示させるため*/
+  }
+  .btn {
+    float: right;
+    height: 3rem;
+    width: 3.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  ul {
+    margin-top: 3rem;
+    border-top: 2px solid #fff;
+  }
+  li {
+    border-bottom: 2px solid #fff;
+  }
+  /* liのなかにあるaという子孫セレクタ */
+  li a {
+    display: block;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="btn">&#926;</div>
+    <ul>
+      <li><a href="">top</a></li>
+      <li><a href="">2nd</a></li>
+      <li><a href="">3rd</a></li>
+      <li><a href="">4th</a></li>
+      <li><a href="">5th</a></li>
+      <li><a href="">6th</a></li>
+    </ul>
+
+    </div>
+  </nav>
+  <header>
+    <h1>あるスマホサイト</h1>
+  </header>
+</body>
+</html>
